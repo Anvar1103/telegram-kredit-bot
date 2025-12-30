@@ -160,4 +160,13 @@ async def choose_credit_type(update):
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle))
-app.run_polling()
+import time
+
+if __name__ == "__main__":
+    while True:
+        try:
+            app.run_polling()
+        except:
+            time.sleep(5)
+
+
