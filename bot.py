@@ -2,7 +2,7 @@ from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import matplotlib.pyplot as plt
 import os
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("8435954495:AAFW24MjhLb5UFlDTxhVLw2Mfkllyjg85AM")
 
 
 # ---- /start ----
@@ -168,5 +168,6 @@ if __name__ == "__main__":
             app.run_polling()
         except:
             time.sleep(5)
+
 
 
